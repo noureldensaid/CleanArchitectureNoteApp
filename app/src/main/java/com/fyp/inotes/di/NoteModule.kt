@@ -10,17 +10,19 @@ import com.fyp.inotes.feature_note.domain.usecase.AddNoteUseCase
 import com.fyp.inotes.feature_note.domain.usecase.DeleteNoteUseCase
 import com.fyp.inotes.feature_note.domain.usecase.GetNotesUsecase
 import com.fyp.inotes.feature_note.domain.usecase.NoteUseCases
+import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@InstallIn(Singleton::class)
+@Module
+@InstallIn(SingletonComponent::class)
 object NoteModule {
 
     @Provides
     @Singleton
-    fun provideNoteDatabase(@ApplicationContext app: Application): NoteDatabase {
+    fun provideNoteDatabase(app: Application): NoteDatabase {
         return Room.databaseBuilder(
             context = app,
             klass = NoteDatabase::class.java,

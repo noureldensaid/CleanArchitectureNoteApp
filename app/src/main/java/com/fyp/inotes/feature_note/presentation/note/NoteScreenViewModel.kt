@@ -21,7 +21,7 @@ import javax.inject.Inject
 class NoteScreenViewModel @Inject constructor(
     private val useCases: NoteUseCases
 ) : ViewModel() {
-    
+
     // ui states
     private val _state = mutableStateOf(NoteState())
     val state: State<NoteState> = _state
@@ -73,7 +73,6 @@ class NoteScreenViewModel @Inject constructor(
     }
 
     private fun getNotes(noteOrder: NoteOrder) {
-
         getNotesJob?.cancel()
         getNotesJob = useCases.getNotesUsecase(noteOrder)
             .onEach { notes ->
@@ -82,7 +81,13 @@ class NoteScreenViewModel @Inject constructor(
                     noteOrder = noteOrder
                 )
             }.launchIn(viewModelScope)
-
     }
+
+    fun add(note: Note) {
+        viewModelScope.launch {
+            useCases.addNoteUseCases(note)
+        }
+    }
+
 
 }
