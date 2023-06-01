@@ -1,4 +1,4 @@
-package com.fyp.inotes.feature_note.presentation.util
+package com.fyp.inotes.feature_note.presentation.note
 
 import com.fyp.inotes.feature_note.domain.model.Note
 import com.fyp.inotes.feature_note.domain.util.NoteOrder

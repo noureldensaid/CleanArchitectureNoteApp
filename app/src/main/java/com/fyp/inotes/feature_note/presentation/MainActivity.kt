@@ -9,7 +9,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.fyp.inotes.feature_note.presentation.note.NoteScreen
+import com.fyp.inotes.core.navigation.MainNavigation
 import com.fyp.inotes.ui.theme.INotesTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     navController = rememberNavController()
-                    NoteScreen(navController)
+                    MainNavigation(navController)
                 }
             }
         }

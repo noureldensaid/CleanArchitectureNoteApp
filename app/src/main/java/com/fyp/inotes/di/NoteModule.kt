@@ -6,10 +6,11 @@ import com.fyp.inotes.feature_note.data.local.NoteDatabase
 import com.fyp.inotes.feature_note.data.local.NoteDatabase.Companion.DATABASE_NAME
 import com.fyp.inotes.feature_note.data.repository.RepositoryImpl
 import com.fyp.inotes.feature_note.domain.repostory.Repository
-import com.fyp.inotes.feature_note.domain.usecase.AddNoteUseCase
-import com.fyp.inotes.feature_note.domain.usecase.DeleteNoteUseCase
+import com.fyp.inotes.feature_note.domain.usecase.AddNoteUsecase
+import com.fyp.inotes.feature_note.domain.usecase.DeleteNoteUsecase
+import com.fyp.inotes.feature_note.domain.usecase.GetNoteByIdUsecase
 import com.fyp.inotes.feature_note.domain.usecase.GetNotesUsecase
-import com.fyp.inotes.feature_note.domain.usecase.NoteUseCases
+import com.fyp.inotes.feature_note.domain.usecase.NoteUsecases
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -38,11 +39,12 @@ object NoteModule {
 
     @Provides
     @Singleton
-    fun provideNoteUsecases(repository: Repository): NoteUseCases {
-        return NoteUseCases(
+    fun provideNoteUsecases(repository: Repository): NoteUsecases {
+        return NoteUsecases(
             getNotesUsecase = GetNotesUsecase(repository),
-            deleteNoteUseCase = DeleteNoteUseCase(repository),
-            addNoteUseCases = AddNoteUseCase(repository)
+            deleteNoteUsecase = DeleteNoteUsecase(repository),
+            addNoteUsecase = AddNoteUsecase(repository),
+            getNoteByIdUsecase = GetNoteByIdUsecase(repository)
         )
     }
 

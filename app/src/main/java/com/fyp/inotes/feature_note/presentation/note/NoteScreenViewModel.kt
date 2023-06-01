@@ -5,11 +5,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.fyp.inotes.feature_note.domain.model.Note
-import com.fyp.inotes.feature_note.domain.usecase.NoteUseCases
+import com.fyp.inotes.feature_note.domain.usecase.NoteUsecases
 import com.fyp.inotes.feature_note.domain.util.NoteOrder
 import com.fyp.inotes.feature_note.domain.util.OrderType
-import com.fyp.inotes.feature_note.presentation.util.NoteEvent
-import com.fyp.inotes.feature_note.presentation.util.NoteState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.launchIn
@@ -19,7 +17,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class NoteScreenViewModel @Inject constructor(
-    private val useCases: NoteUseCases
+    private val useCases: NoteUsecases
 ) : ViewModel() {
 
     // ui states
@@ -56,7 +54,7 @@ class NoteScreenViewModel @Inject constructor(
 
             is NoteEvent.DeleteNote -> {
                 viewModelScope.launch {
-                    useCases.deleteNoteUseCase(event.note)
+                    useCases.deleteNoteUsecase(event.note)
                     recentlyDeletedNote = event.note
                 }
             }
@@ -64,7 +62,7 @@ class NoteScreenViewModel @Inject constructor(
             is NoteEvent.RestoreNote -> {
                 viewModelScope.launch {
                     // add recently deleted again
-                    useCases.addNoteUseCases(recentlyDeletedNote ?: return@launch)
+                    useCases.addNoteUsecase(recentlyDeletedNote ?: return@launch)
                     recentlyDeletedNote = null
                 }
             }
@@ -85,7 +83,7 @@ class NoteScreenViewModel @Inject constructor(
 
     fun add(note: Note) {
         viewModelScope.launch {
-            useCases.addNoteUseCases(note)
+            useCases.addNoteUsecase(note)
         }
     }
 

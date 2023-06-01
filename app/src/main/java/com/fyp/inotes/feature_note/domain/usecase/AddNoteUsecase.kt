@@ -4,7 +4,7 @@ import com.fyp.inotes.feature_note.domain.model.Note
 import com.fyp.inotes.feature_note.domain.repostory.Repository
 import com.fyp.inotes.feature_note.domain.util.InvalidNoteException
 
-class AddNoteUseCase(private val repository: Repository) {
+class AddNoteUsecase(private val repository: Repository) {
 
     @Throws(InvalidNoteException::class)
     suspend operator fun invoke(note: Note) {

@@ -13,7 +13,7 @@ data class Note(
     @PrimaryKey val id: Int? = null,
     val title: String,
     val content: String,
-    val color: Long,
+    val color: Int,
     val timeStamp: Long
 ) {
     companion object {

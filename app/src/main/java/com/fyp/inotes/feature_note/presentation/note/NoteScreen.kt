@@ -25,12 +25,13 @@ import androidx.compose.material.SnackbarResult
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Sort
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -39,7 +40,6 @@ import androidx.navigation.compose.rememberNavController
 import com.fyp.inotes.core.navigation.Screen
 import com.fyp.inotes.feature_note.presentation.note.componenets.NoteItem
 import com.fyp.inotes.feature_note.presentation.note.componenets.OrderSection
-import com.fyp.inotes.feature_note.presentation.util.NoteEvent
 import kotlinx.coroutines.launch
 
 @Composable
@@ -55,10 +55,7 @@ fun NoteScreen(
         scaffoldState = scaffoldState,
         floatingActionButton = {
             FloatingActionButton(
-                onClick = {
-                    // navigate to add a new note
-                    navigator.navigate(Screen.AddEditNoteScreen.route)
-                },
+                onClick = { navigator.navigate(Screen.AddEditNoteScreen.route) },
                 backgroundColor = MaterialTheme.colors.primary
             ) {
                 Icon(
@@ -80,10 +77,15 @@ fun NoteScreen(
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Text(text = "Get Things Done!")
+                    Text(
+                        text = "Get Things Done!",
+                        style = MaterialTheme.typography.h5,
+                        fontFamily = FontFamily.Cursive
+
+                        )
                     IconButton(onClick = { vm.onEvent(NoteEvent.ToggleOrderSection) }) {
                         Icon(
-                            imageVector = Icons.Default.Settings,
+                            imageVector = Icons.Default.Sort,
                             contentDescription = "Sort",
                         )
                     }
@@ -107,6 +109,10 @@ fun NoteScreen(
                                 .fillMaxWidth()
                                 .clickable {
                                     // navigate to certain note using it's id
+                                    navigator.navigate(
+                                        Screen.AddEditNoteScreen.route
+                                                + "?noteId=${note.id}&noteColor=${note.color}"
+                                    )
                                 },
                             note = note,
                             onDeleteClick = {

@@ -23,7 +23,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.ColorUtils
@@ -101,17 +100,17 @@ fun NoteItem(
 }
 
 
-@Preview(showBackground = true)
-@Composable
-fun NoteItemPreview() {
-    NoteItem(
-        note = Note(
-            title = "facilis",
-            content = "neglegentur",
-            color = 0xffffab91,
-            timeStamp = 8565,
-            id = null
-        ),
-        onDeleteClick = {}
-    )
-}
+//@Preview(showBackground = true)
+//@Composable
+//fun NoteItemPreview() {
+//    NoteItem(
+//        note = Note(
+//            title = "facilis",
+//            content = "neglegentur",
+//            color = 0xffffab91,
+//            timeStamp = 8565,
+//            id = null
+//        ),
+//        onDeleteClick = {}
+//    )
+//}
