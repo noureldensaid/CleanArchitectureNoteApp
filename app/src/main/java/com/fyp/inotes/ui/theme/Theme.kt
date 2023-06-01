@@ -21,6 +21,6 @@ fun INotesTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable
         colors = DarkColorPalette,
         typography = Typography,
         shapes = Shapes,
-        content = content
+        content = content,
     )
 }

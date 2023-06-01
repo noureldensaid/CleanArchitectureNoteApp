@@ -25,7 +25,7 @@ import androidx.compose.material.SnackbarResult
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.CompareArrows
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
@@ -34,6 +34,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.fyp.inotes.core.navigation.Screen
 import com.fyp.inotes.feature_note.presentation.note.componenets.NoteItem
 import com.fyp.inotes.feature_note.presentation.note.componenets.OrderSection
 import com.fyp.inotes.feature_note.presentation.util.NoteEvent
@@ -41,8 +44,9 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun NoteScreen(
+    navigator: NavController,
+    vm: NoteScreenViewModel = hiltViewModel()
 ) {
-    val vm: NoteScreenViewModel = hiltViewModel()
     val state = vm.state.value
     val scaffoldState = rememberScaffoldState()
     val coroutineScope = rememberCoroutineScope()
@@ -52,14 +56,8 @@ fun NoteScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-//                    vm.add(
-//                        note = Note(
-//                            title = "hac",
-//                            content = "fusce",
-//                            color = 0xffffab91,
-//                            timeStamp = LocalDateTime.now().toString().toLong(),
-//                        )
-//                    )
+                    // navigate to add a new note
+                    navigator.navigate(Screen.AddEditNoteScreen.route)
                 },
                 backgroundColor = MaterialTheme.colors.primary
             ) {
@@ -85,8 +83,8 @@ fun NoteScreen(
                     Text(text = "Get Things Done!")
                     IconButton(onClick = { vm.onEvent(NoteEvent.ToggleOrderSection) }) {
                         Icon(
-                            imageVector = Icons.Default.CompareArrows,
-                            contentDescription = "Sort"
+                            imageVector = Icons.Default.Settings,
+                            contentDescription = "Sort",
                         )
                     }
                 }
@@ -107,7 +105,9 @@ fun NoteScreen(
                         NoteItem(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .clickable { },
+                                .clickable {
+                                    // navigate to certain note using it's id
+                                },
                             note = note,
                             onDeleteClick = {
                                 vm.onEvent(NoteEvent.DeleteNote(note))
@@ -135,5 +135,5 @@ fun NoteScreen(
 @Preview(showBackground = true)
 @Composable
 fun NoteScreenPreview() {
-    NoteScreen()
+    NoteScreen(navigator = rememberNavController())
 }

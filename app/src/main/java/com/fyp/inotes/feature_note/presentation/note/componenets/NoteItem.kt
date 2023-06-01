@@ -101,17 +101,17 @@ fun NoteItem(
 }
 
 
-//@Preview(showBackground = true)
-//@Composable
-//fun NoteItemPreview() {
-//    NoteItem(
-//        note = Note(
-//            title = "facilis",
-//            content = "neglegentur",
-//            color =  0xffffab91,
-//            timeStamp = 8565,
-//            id = null
-//        ),
-//        onDeleteClick = {}
-//    )
-//}
+@Preview(showBackground = true)
+@Composable
+fun NoteItemPreview() {
+    NoteItem(
+        note = Note(
+            title = "facilis",
+            content = "neglegentur",
+            color = 0xffffab91,
+            timeStamp = 8565,
+            id = null
+        ),
+        onDeleteClick = {}
+    )
+}
