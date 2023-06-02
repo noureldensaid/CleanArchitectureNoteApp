@@ -56,7 +56,7 @@ Go to the [Releases](https://github.com/skydoves/Pokedex/releases) to download t
 ## Architecture
 **Pokedex** is based on the MVVM architecture and the Repository pattern, which follows the [Google's official architecture guidance](https://developer.android.com/topic/architecture).
 
-![architecture](figure/figure0.png)
+![architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/780224d3-5f62-41ea-9d12-7af02c57cbe1)
 
 The overall architecture of **Pokedex** is composed of two layers; the UI layer and the data layer. Each layer has dedicated components and they have each different responsibilities, as defined below:
 
@@ -65,7 +65,7 @@ The overall architecture of **Pokedex** is composed of two layers; the UI layer 
 
 ### Architecture Overview
 
-![architecture](figure/figure1.png)
+![architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/6523dd8f-6aa0-4d83-8050-afb85f5ed1de)
 
 - Each layer follows [unidirectional event/data flow](https://developer.android.com/topic/architecture/ui-layer#udf); the UI layer emits user events to the data layer, and the data layer exposes data as a stream to other layers.
 - The data layer is designed to work independently from other layers and must be pure, which means it doesn't have any dependencies on the other layers.
@@ -74,7 +74,7 @@ With this loosely coupled architecture, you can increase the reusability of comp
 
 ### UI Layer
 
-![architecture](figure/figure2.png)
+![architecture]()
 
 The UI layer consists of UI elements to configure screens that could interact with users and [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) that holds app states and restores data when configuration changes.
 - UI elements observe the data flow via [DataBinding](https://developer.android.com/topic/libraries/data-binding), which is the most essential part of the MVVM architecture. 
@@ -82,7 +82,7 @@ The UI layer consists of UI elements to configure screens that could interact wi
 
 ### Data Layer
 
-![architecture](figure/figure3.png)
+![architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/e6bb598a-d8e8-4dc1-be5b-1438a60b1a89)
 
 The data Layer consists of repositories, which include business logic, such as querying data from the local database and requesting remote data from the network. It is implemented as an offline-first source of business logic and follows the [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth) principle.<br>
 
@@ -132,4 +132,23 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
