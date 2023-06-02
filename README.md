@@ -74,7 +74,7 @@ With this loosely coupled architecture, you can increase the reusability of comp
 
 ### UI Layer
 
-![architecture]()
+![architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/53cb3bc4-f151-4114-a698-272348c1ebaa)
 
 The UI layer consists of UI elements to configure screens that could interact with users and [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) that holds app states and restores data when configuration changes.
 - UI elements observe the data flow via [DataBinding](https://developer.android.com/topic/libraries/data-binding), which is the most essential part of the MVVM architecture. 
@@ -89,66 +89,8 @@ The data Layer consists of repositories, which include business logic, such as q
 **Pokedex** is an offline-first app is an app that is able to perform all, or a critical subset of its core functionality without access to the internet. 
 So users don't need to be up-to-date on the network resources every time and it will decrease users' data consumption. For further information, you can check out [Build an offline-first app](https://developer.android.com/topic/architecture/data-layer/offline-first).
 
-## Modularization
-
-![architecture](figure/figure4.png)
-
-**Pokedex** adopted modularization strategies below:
-
-- **Reusability**: Modulizing reusable codes properly enable opportunities for code sharing and limits code accessibility in other modules at the same time.
-- **Parallel Building**: Each module can be run in parallel and it reduces the build time.
-- **Strict visibility control**: Modules restrict to expose dedicated components and access to other layers, so it prevents they're being used outside the module
-- **Decentralized focusing**: Each developer team can assign their dedicated module and they can focus on their own modules.
-
-For more information, check out the [Guide to Android app modularization](https://developer.android.com/topic/modularization).
 
 ## MAD Score
 ![summary](https://user-images.githubusercontent.com/24237865/102366914-84f6b000-3ffc-11eb-8d49-b20694239782.png)
 ![kotlin](https://user-images.githubusercontent.com/24237865/102366932-8a53fa80-3ffc-11eb-8131-fd6745a6f079.png)
-
-## Open API
-
-<img src="https://user-images.githubusercontent.com/24237865/83422649-d1b1d980-a464-11ea-8c91-a24fdf89cd6b.png" align="right" width="21%"/>
-
-Pokedex using the [PokeAPI](https://pokeapi.co/) for constructing RESTful API.<br>
-PokeAPI provides a RESTful API interface to highly detailed objects built from thousands of lines of data related to Pokémon.
-
-## Find this repository useful? :heart:
-Support it by joining __[stargazers](https://github.com/skydoves/Pokedex/stargazers)__ for this repository. :star: <br>
-Also, __[follow me](https://github.com/skydoves)__ on GitHub for my next creations! 🤩
-
-# License
-```xml
-Designed and developed by 2022 skydoves (Jaewoong Eum)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
