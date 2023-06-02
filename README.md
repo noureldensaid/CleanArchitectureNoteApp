@@ -29,4 +29,22 @@
 **iNotes** was built following [Android Clean Architecture](https://medium.com/android-dev-hacks/detailed-guide-on-android-clean-architecture-9eab262a9011), so it would be a great sample to show how the architecture works in real-world projects.
 
 ![architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/780224d3-5f62-41ea-9d12-7af02c57cbe1)
+## Clean Architecture
+![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_architecture_reloaded_main.png)
+
+### ----------------------------------------------------------------------------------------------
+
+## Android 3 Layers Architecture
+![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_architecture_reloaded_layers.png)
+
+### ----------------------------------------------------------------------------------------------
+
+## UI Layer: MVVM 
+![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_architecture_reloaded_mvvm_app.png)
+
+### ----------------------------------------------------------------------------------------------
+
+## Data Layer: Repository 
+![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_archictecture_reloaded_repository.png)
+
 
