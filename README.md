@@ -3,8 +3,6 @@
 <p align="center">  
 🗡️ iNotes demonstrates modern Android development with Jetpack compose, Hilt, Coroutines, Flow, Jetpack (Room, ViewModel), and Material Design based on the clean architecture pattern with android architecture components. 
 </p>
-</br>
-
 <p align="center">
 <img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/f05317cf-407a-43c4-a2e1-e6003bb516b4"  />
 </p>
