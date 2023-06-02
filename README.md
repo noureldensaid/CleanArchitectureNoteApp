@@ -28,23 +28,26 @@
 
 **iNotes** was built following [Android Clean Architecture](https://medium.com/android-dev-hacks/detailed-guide-on-android-clean-architecture-9eab262a9011), so it would be a great sample to show how the architecture works in real-world projects.
 
-![architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/780224d3-5f62-41ea-9d12-7af02c57cbe1)
-## Clean Architecture
-![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_architecture_reloaded_main.png)
+ # Clean Architecture with Android Architecture components
+Android simple example shows how to use the clean architecture pattern with android architecture components. 
 
-### ----------------------------------------------------------------------------------------------
+It retrieves remote data and persists it locally for offline mode. 
+It contains only two Activities:- 
+1- CustomersActivity: shows list of customers data.
+2- ReservationActivity: shows resutarant table map for customer reservation
 
-## Android 3 Layers Architecture
-![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_architecture_reloaded_layers.png)
+Clean Architecture
+-
+![clean_architecture](https://user-images.githubusercontent.com/16631131/44717299-53711800-aac5-11e8-86b5-d3bda1035abc.png)
 
-### ----------------------------------------------------------------------------------------------
+Architectural approach
+-
+![clean_architecture_layers](https://user-images.githubusercontent.com/16631131/44717362-73084080-aac5-11e8-9029-10b3da073804.png)
 
-## UI Layer: MVVM 
-![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_architecture_reloaded_mvvm_app.png)
-
-### ----------------------------------------------------------------------------------------------
-
-## Data Layer: Repository 
-![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_archictecture_reloaded_repository.png)
+# Android Architecture components Approach
+![final-architecture](https://user-images.githubusercontent.com/16631131/44723199-fb8fdc80-aad7-11e8-88b4-dbd93d7441a9.png)
 
 
+Android Architecture components with clean Architectural reactive approach
+-
+![clean_architecture_layers_details2](https://user-images.githubusercontent.com/16631131/44722878-2594cf00-aad7-11e8-8820-feedf17b0ba1.png)
