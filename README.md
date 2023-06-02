@@ -6,12 +6,15 @@
 </p>
 </br>
 
+ 
 <p align="center">
-<img src="/previews/screenshot.png"/>
+  <img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/bcf78faf-64eb-4f45-b492-d5a8f5aad08e" height="350" />
+  <img src="/mocks/planetary_details.png" alt="Mockup Image 2" height="350" />
+  <img src="/mocks/asteroid_details.png" alt="Mockup Image 3" height="350" />
+  <img src="/mocks/all_asteroids.png" alt="Mockup Image 4" height="350" />
 </p>
-
-
-
+ 
+ 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 21
 - [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
