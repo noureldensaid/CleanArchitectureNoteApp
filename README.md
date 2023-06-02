@@ -1,5 +1,14 @@
-<h1 align="center">iNotes</h1>
+<h1 align="center">Pokedex</h1>
 
+<p align="center">
+  <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
+  <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
+  <a href="https://github.com/skydoves/Pokedex/actions"><img alt="Build Status" src="https://github.com/skydoves/Pokedex/workflows/Android%20CI/badge.svg"/></a> <br>
+  <a href="https://devlibrary.withgoogle.com/products/android/repos/skydoves-pokedex"><img alt="Google" src="https://skydoves.github.io/badges/google-devlib.svg"/></a>
+  <a href="https://proandroiddev.com/exploring-dagger-hilt-and-whats-main-differences-with-dagger-android-c8c54cd92f18"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>
+  <a href="https://youtu.be/RG9ATodwbT4"><img alt="Profile" src="https://skydoves.github.io/badges/youtube-google-developers.svg"/></a> 
+  <a href="https://github.com/skydoves"><img alt="Profile" src="https://skydoves.github.io/badges/skydoves.svg"/></a> 
+</p>
 
 <p align="center">  
 🗡️ Pokedex demonstrates modern Android development with Hilt, Coroutines, Flow, Jetpack (Room, ViewModel), and Material Design based on MVVM architecture.
@@ -9,6 +18,9 @@
 <p align="center">
 <img src="/previews/screenshot.png"/>
 </p>
+
+## Download
+Go to the [Releases](https://github.com/skydoves/Pokedex/releases) to download the latest APK.
 
 <img src="/previews/preview.gif" align="right" width="320"/>
 
@@ -90,3 +102,34 @@ So users don't need to be up-to-date on the network resources every time and it 
 
 For more information, check out the [Guide to Android app modularization](https://developer.android.com/topic/modularization).
 
+## MAD Score
+![summary](https://user-images.githubusercontent.com/24237865/102366914-84f6b000-3ffc-11eb-8d49-b20694239782.png)
+![kotlin](https://user-images.githubusercontent.com/24237865/102366932-8a53fa80-3ffc-11eb-8131-fd6745a6f079.png)
+
+## Open API
+
+<img src="https://user-images.githubusercontent.com/24237865/83422649-d1b1d980-a464-11ea-8c91-a24fdf89cd6b.png" align="right" width="21%"/>
+
+Pokedex using the [PokeAPI](https://pokeapi.co/) for constructing RESTful API.<br>
+PokeAPI provides a RESTful API interface to highly detailed objects built from thousands of lines of data related to Pokémon.
+
+## Find this repository useful? :heart:
+Support it by joining __[stargazers](https://github.com/skydoves/Pokedex/stargazers)__ for this repository. :star: <br>
+Also, __[follow me](https://github.com/skydoves)__ on GitHub for my next creations! 🤩
+
+# License
+```xml
+Designed and developed by 2022 skydoves (Jaewoong Eum)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
