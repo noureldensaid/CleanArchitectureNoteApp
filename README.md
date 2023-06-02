@@ -30,7 +30,7 @@
 **iNotes** is based on the Clean architecture and the MVVM  
 
 ![clean architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/86a75754-4b32-44c6-9031-2d0de23e4e70)
-https://medium.com/android-dev-hacks/detailed-guide-on-android-clean-architecture-9eab262a9011
+
 **iNotes** was built following [Android Clean Architecture]
 (https://medium.com/android-dev-hacks/detailed-guide-on-android-clean-architecture-9eab262a9011); so it would be a great sample to show how the architecture works in real-world projects.
 
