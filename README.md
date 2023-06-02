@@ -1,20 +1,21 @@
 <h1 align="center">iNotes</h1>
 
-
 <p align="center">  
 🗡️ Pokedex demonstrates modern Android development with Hilt, Coroutines, Flow, Jetpack (Room, ViewModel), and Material Design based on MVVM architecture.
 </p>
 </br>
 
- 
+
 <p align="center">
-  <img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/bcf78faf-64eb-4f45-b492-d5a8f5aad08e" height="350" />
-  <img src="/mocks/planetary_details.png" alt="Mockup Image 2" height="350" />
-  <img src="/mocks/asteroid_details.png" alt="Mockup Image 3" height="350" />
-  <img src="/mocks/all_asteroids.png" alt="Mockup Image 4" height="350" />
+<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/bcf78faf-64eb-4f45-b492-d5a8f5aad08e" height="350" />
+<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/bb749a57-3e62-45c9-906d-070be4a478a4" height="350" />
+<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/5e0531e9-1163-456c-9ed9-7fc788a765d5" height="350" />
+<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/c7cf249e-de2a-46ad-b52d-d67477f602d9" height="350" />
+<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/a8bf3808-e1df-4392-89b5-ed8deaea9888" height="350" />
+
 </p>
- 
- 
+
+
 ## Tech stack & Open-source libraries
 - Minimum SDK level 21
 - [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
