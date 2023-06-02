@@ -23,5 +23,5 @@
 - Repository Pattern
 - 
 ## Clean Architecture with Android Architecture components
-![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/android10/Sample-Data/blob/master/Android-CleanArchitecture-Kotlin/architecture/clean_architecture_reloaded_main.png)
+![https://fernandocejas.com/2018/05/07/architecting-android-reloaded/](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/cf0cd6a1-a178-4931-b7b4-01583faa7e32)
  
