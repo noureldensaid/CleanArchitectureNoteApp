@@ -1,7 +1,7 @@
 <h1 align="center">iNotes</h1>
 
 <p align="center">  
-🗡️ Pokedex demonstrates modern Android development with Hilt, Coroutines, Flow, Jetpack (Room, ViewModel), and Material Design based on MVVM architecture.
+🗡️ iNotes demonstrates modern Android development with Jetpack compose, Hilt, Coroutines, Flow, Jetpack (Room, ViewModel), and Material Design based on clean architecture.
 </p>
 </br>
  
