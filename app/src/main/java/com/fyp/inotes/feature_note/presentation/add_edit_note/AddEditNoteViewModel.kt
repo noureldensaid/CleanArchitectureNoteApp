@@ -20,11 +20,15 @@ import javax.inject.Inject
 @HiltViewModel
 class AddEditNoteViewModel @Inject constructor(
     private val usecases: NoteUsecases,
-    private val savedStateHandle: SavedStateHandle
+    savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     init {
-        getCurrentNote()
+        savedStateHandle.get<Int>("noteId")?.let { noteId ->
+            if (noteId != -1) {
+                getCurrentNote(noteId)
+            }
+        }
     }
 
     private var currentNoteId: Int? = null
@@ -64,7 +68,7 @@ class AddEditNoteViewModel @Inject constructor(
 
             is AddEditNoteEvent.ChangeContentFocus -> {
                 _noteContent.value = _noteContent.value.copy(
-                    isHintVisible =!event.focusState.isFocused
+                    isHintVisible = !event.focusState.isFocused
                             && _noteContent.value.text.isBlank()
                 )
             }
@@ -102,24 +106,22 @@ class AddEditNoteViewModel @Inject constructor(
         }
     }
 
-    private fun getCurrentNote() {
-        savedStateHandle.get<Int>("noteId")?.let { noteId ->
-            if (noteId != -1) {
-                viewModelScope.launch {
-                    usecases.getNoteByIdUsecase(noteId)?.also { note ->
-                        currentNoteId = note.id
-                        _noteTitle.value = noteTitle.value.copy(
-                            text = note.title,
-                            isHintVisible = false
-                        )
-                        _noteContent.value = _noteContent.value.copy(
-                            text = note.content,
-                            isHintVisible = false
-                        )
-                        _noteColor.value = note.color
-                    }
-                }
+    private fun getCurrentNote(noteId: Int) {
+        viewModelScope.launch {
+            usecases.getNoteByIdUsecase(noteId)?.also { note ->
+                currentNoteId = note.id
+                _noteTitle.value = noteTitle.value.copy(
+                    text = note.title,
+                    isHintVisible = false
+                )
+                _noteContent.value = _noteContent.value.copy(
+                    text = note.content,
+                    isHintVisible = false
+                )
+                _noteColor.value = note.color
             }
         }
     }
+
+
 }

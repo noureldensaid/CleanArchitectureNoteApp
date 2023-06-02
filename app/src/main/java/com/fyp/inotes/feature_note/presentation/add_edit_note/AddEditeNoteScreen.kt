@@ -135,8 +135,8 @@ fun AddEditNoteScreen(
                 onFocusChange = { viewModel.onEvent(AddEditNoteEvent.ChangeTitleFocus(it)) },
                 singleLine = true,
                 isHintVisible = noteTitle.value.isHintVisible,
-                textStyle = MaterialTheme.typography.h5
-            )
+                textStyle = MaterialTheme.typography.h4,
+              )
 
             Spacer(modifier = Modifier.height(16.dp))
 

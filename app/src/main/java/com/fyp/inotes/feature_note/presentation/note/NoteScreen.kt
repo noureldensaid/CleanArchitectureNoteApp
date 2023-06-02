@@ -31,7 +31,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -80,9 +79,7 @@ fun NoteScreen(
                     Text(
                         text = "Get Things Done!",
                         style = MaterialTheme.typography.h5,
-                        fontFamily = FontFamily.Cursive
-
-                        )
+                    )
                     IconButton(onClick = { vm.onEvent(NoteEvent.ToggleOrderSection) }) {
                         Icon(
                             imageVector = Icons.Default.Sort,
