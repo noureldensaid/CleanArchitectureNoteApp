@@ -5,16 +5,13 @@
 </p>
 </br>
 
-
 <p align="center">
-<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/bcf78faf-64eb-4f45-b492-d5a8f5aad08e" height="350" />
-<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/bb749a57-3e62-45c9-906d-070be4a478a4" height="350" />
+<img src="" height="350" />
+<img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/85423907-341e-44ba-9a50-e6ec91e0a518" height="350" />
 <img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/5e0531e9-1163-456c-9ed9-7fc788a765d5" height="350" />
 <img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/c7cf249e-de2a-46ad-b52d-d67477f602d9" height="350" />
 <img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/a8bf3808-e1df-4392-89b5-ed8deaea9888" height="350" />
-
-</p>
-
+![Screenshot_20230603_000821_samsung-galaxys20-pink-portrait]()
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 21
@@ -39,7 +36,7 @@
 
 ![architecture](https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/780224d3-5f62-41ea-9d12-7af02c57cbe1)
 
-The overall architecture of **iNotes** is composed of two layers; the UI layer and the data layer. Each layer has dedicated components and they have each different responsibilities, as defined below:
+The overall architecture of **iNotes** is composed of three layers; the UI layer, the domain layer and the data layer. Each layer has dedicated components and they have each different responsibilities, as defined below:
 
 **iNotes** was built with [Guide to app architecture](https://developer.android.com/topic/architecture), so it would be a great sample to show how the architecture works in real-world projects.
 
