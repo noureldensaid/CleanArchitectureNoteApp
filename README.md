@@ -1,7 +1,18 @@
 <h1 align="center">iNotes</h1>
 
 <p align="center">  
-🗡️ iNotes demonstrates modern Android development with Jetpack compose, Hilt, Coroutines, Flow, Jetpack (Room, ViewModel), and Material Design based on the clean architecture pattern with android architecture components. 
+🔥 SPACE 
+• Developed a native Android mobile app using (Kotlin).
+• The application addresses the challenge of finding suitable workspaces by providing users with detailed information about the
+nearest and highly-rated options that meet their specific needs.
+• Effectively organized and managed the workspace booking process for a seamless user experience.
+• Utilized GPS technology to suggest the closest workspaces based on user location.
+• Showcased amenities and real images of workspaces to build user trust and enable informed decision-making.
+• Optimized users’ time and reduced costs by avoiding overcrowded workspaces.
+• Facilitated reservations and increased bookings for lesser-known workspaces.
+• Streamlined the booking process and implemented efficient room management capabilities for workspace owners.
+• Used technologies: MVVM, LiveData, View Binding, Navigation Component, Kotlin Coroutines, Kotlin Flows, Retrofit2, Dagger Hilt,
+Room Database, Datastore Preferences, User Location, Media Permissions and Glide.
 </p>
 <p align="center">
 <img src="https://github.com/noureldensaid/CleanArchitectureNoteApp/assets/93207605/f05317cf-407a-43c4-a2e1-e6003bb516b4"  />
