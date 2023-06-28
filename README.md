@@ -3,7 +3,7 @@
 <p align="center">  
 🔥 SPACE 
 </p>
-<p align="center">• A native Android mobile app using (Kotlin). </p>
+<p align="left">• A native Android mobile app using (Kotlin). </p>
 <p align="center">• The application addresses the challenge of finding suitable workspaces by providing users with detailed information about the
 nearest and highly-rated options that meet their specific needs.</p>
 <p align="center">• Effectively organized and managed the workspace booking process for a seamless user experience.</p>
